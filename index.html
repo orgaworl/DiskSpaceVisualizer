@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html>
 
-
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="./styles.css" rel="stylesheet">
     <title>Visible File Scanner</title>
   </head>
 
-
   <body>
-    
-    <h1>Hello World!</h1>
-    <button  type="submit" name="myButton" value="foo"> Select the path.</button>
+    <header>
+      <div class="menu">
+        <a href="https://github.com/orgaworl/DiskSpaceVisualizer">
+          <img src="img/black_on_trans.png" alt="Visible File Scanner"
+            class="logo" />
+        </a>
+        <div class="options-left">
+          <ul class="all-selections">
+            <li class="selection">Home</li>
+            <li class="selection">Open</li>
+            <li class="selection">Help</li>
+            <li class="selection">Exit</li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="search-bar">
 
-    <box> 
-      
-    </box>
-    <!-- You can also require other files to run in this process -->
+        <form>
+          <label for="fileInput">Choose a path</label>
+          <input class="select-path" type="file" id="fileInput"
+            placeholder="path" webkitdirectory multiple>
+        </form>
+
+      </div>
+
+      <div>
+        <div class="options-right">
+          <ul>
+            <li class="selection">Minus</li>
+            <li class="selection">Maximum</li>
+            <li class="selection">Exit</li>
+          </ul>
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+      <section class="main-body">
+        <div class="logo-picture">
+          <img src="img/black_on_white.png" alt="Visible File Scanner"
+            style="width:100%;">
+        </div>
+        <div class="introduction">
+          <h1>Visible File Scanner</h1>
+          <p class="content">Visible File Scanner is a tool that can help you
+            visualize the file structure of a directory and see how much space
+            each file or folder takes up. It can be used to identify large files
+            or folders that are taking up too much space, and to help you manage
+            your storage more effectively.</p>
+        </div>
+      </section>
+
+      <section class="color-block">
+        <h1>How to get it?</h1>
+
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        Copyright &copy; DiskSpaceVisualizer 2024 <br>
+        github@<a href="https://github.com/orgaworl/DiskSpaceVisualizer"
+          text-decoration="none"
+          color="while">DiskSpaceVisualizer</a>
+      </div>
+    </footer>
     <script src="./renderer.js"></script>
   </body>
-
 
 </html>
