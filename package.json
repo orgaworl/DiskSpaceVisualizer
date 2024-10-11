@@ -1,8 +1,8 @@
 {
-  "name": "DiskSpaceVisualizer",
+  "name": "Disk Space Visualizer",
   "version": "1.0.0",
   "description": "A disk space analysis software based on electron.",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "electron-forge start",
     "auto": "nodemon --watch main.js --exec electron-forge start",
@@ -26,7 +26,8 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
     "@electron-forge/plugin-fuses": "^7.5.0",
     "@electron/fuses": "^1.8.0",
-    "electron": "^32.1.2"
+    "electron": "^32.1.2",
+    "d3": "^7.6.1"
   },
   "dependencies": {
     "@electron/remote": "^2.1.2",

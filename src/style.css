@@ -6,8 +6,20 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 } */
+.hidden {display: none;}
 
+html,body {
+    margin: auto;
+    height:100%;
+    width:100%;
+}
 
+.block-title-p{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
 /*----------------------------------------------------------*/
 
@@ -81,44 +93,45 @@ header li {
 
 /*----------------------------------------------------------*/
 
-body {
-    
-    background-color: #e5e9f0;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 60px;
-}
 
 main{
-    height:50%;
-
+    width:100%;
+    height:100%;
+    margin-top:80px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
-
-.close-window{
-    background-color: #88c0d0;
-    display: none;
-
-}
 
 .display-window{
     display: block;
-    background-color: #88c0d0;
-    
+    border:#88c0d0 ,solid;
+    padding:0;
+    background-color: #e5e9f0;
     width:80%;
     height:80%;
 
-
-    position:absolute;
+    /* position:absolute;
     top:100px;
-    left:10%;
+    left:10%; */
 
 }
+
+/* .display-block{
+    display : inline-block;
+    background :#8fbcbb;
+    border :1px,#d08770,solid;
+} */
+
+
+
+
 
 /*----------------------------------------------------------*/
 footer {
     width:100%;
-
+    height: 20px;
     position: absolute;
     left:0;
     bottom: 0;
@@ -135,6 +148,10 @@ footer {
     margin-left:10px;
 
 }
+.footer-bar-name-text{
+    font-size: small;
+    color:#a3be8c;
+}
 
 
 /*----------------------------------------------------------*/
@@ -150,37 +167,16 @@ a:hover {
 }
 
 
-.main-body{
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-}
-.logo-picture{
-    display:inline;
-    width: 40vw;
-    
-    align-items: center;
-}
-.introduction {
-    display: inline;
-    width: 30vw;
-}
+/*----------------------------------------------------------*/
+
 .content{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:#4c566a;
     font-size: large;
 }
 
-.select-path{
-    
-    background-color:#88c0d0;
-}
 
-.color-block{
-    background-color: #d8dee9;
-    border-radius: 5px;
-    height: 10%;
-}
+
 
 .normal-button{
     background-color: #88c0d0;

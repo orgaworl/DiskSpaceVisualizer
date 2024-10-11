@@ -11,9 +11,9 @@ function createMainWindow() {
     frame:false,
     x: 0,
     y: 0,
-    width: 1000,
+    width: 2000,
     minWidth: 800,
-    height: 600,
+    height: 1024,
     show: false,
     webPreferences: {
       nodeIntegration: true,
@@ -23,7 +23,7 @@ function createMainWindow() {
   });
   require("@electron/remote/main").initialize();
   require("@electron/remote/main").enable(mainWindow.webContents);
-  mainWindow.loadFile("index.html");
+  mainWindow.loadFile("src/index.html");
 
   mainWindow.once("ready-to-show", () => {
     mainWindow.show();
@@ -33,6 +33,7 @@ function createMainWindow() {
   //   console.log("----did-finish-load----");
   // });
 
+  
   // mainWindow.webContents.on("dom-ready", () => {
   //   console.log("----dom-ready----");
   // });

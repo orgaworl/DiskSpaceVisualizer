@@ -2,11 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'" />
-    <link href="./style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <title>Disk Space Visualizer</title>
   </head>
 
@@ -15,23 +14,23 @@
       <div class="title-bar">
 
         <img
-          src="img/icon/black_on_trans.png"
+          src="../img/icon/black_on_trans.png"
           alt="Disk Space Visualizer"
           class="logo" />
         <p> Disk Space Visualizer </p>
         <div class="menu-items">
           <div class="menu-item">
-            <img id="option-minimize" src="img/minus_icon_246303.png"
+            <img id="option-minimize" src="../img/minus_icon_246303.png"
               width="20px" />
           </div>
 
           <div class="menu-item">
-            <img id="option-maximize" src="img/checkbox_empty_icon_246490.png"
+            <img id="option-maximize" src="../img/checkbox_empty_icon_246490.png"
               width="20px" />
           </div>
 
           <div class="menu-item">
-            <img id="option-close" src="img/cross_icon_246446.png"
+            <img id="option-close" src="../img/cross_icon_246446.png"
               width="20px" />
           </div>
         </div>
@@ -52,10 +51,10 @@
     </header>
 
     <main>
-      <section class="display-window">
+      <div class="display-window">
 
         
-      </section>
+      </div>
 
 
 
@@ -63,16 +62,9 @@
 
     <footer>
       <div class="footer-bar-name">
-        DiskSpaceVisualizer 2024
+        <p class="footer-bar-name-text">DiskSpaceVisualizer 2024 Version -1</p>
       </div>
     </footer>
-
-    <!-- <div class="close-window">
-      <h3>是否关闭当前应用?</h3>
-      <p>请确保您已完成任务后再关闭</p>
-      <p class="close-button"><span>是</span><span>否</span></p>
-    </div> -->
-
     <script src="index.js"></script>
   </body>
 </html>
